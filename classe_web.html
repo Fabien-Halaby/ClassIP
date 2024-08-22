@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe d'addresse IP</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div{
+            border: 1px solid #fff;
+            padding: 50px 50px;
+        }
+        h2{
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 30px;
+            text-align: center;
+        }
+        form{
+            margin: 50px 20px;
+        }
+        input[type=text]{
+            background-color: transparent;
+            border: 1px solid #fff;
+            padding: 10px 10px;
+            outline: none;
+            color: #fff;
+            font-size: 20px;
+        }
+        input[type=submit]{
+            background-color: transparent;
+            border: 1px solid #fff;
+            padding: 10px 10px;
+            color: #fff;
+            font-size: 20px;
+            transition: 0.5s ease-out;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Classe d'addresse IP</h2>
+        <form action="http://localhost/cgi-bin/ADDRESSE/classe_web.cgi" method="get">
+            <input type="text" name="addresse" placeholder="Saisissez l'addresse" required>
+            <input type="submit" value="Voir">
+        </form>
+    </div>
+</body>
+</html>
